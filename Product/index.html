@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYRA | Product</title>
+  <link rel="stylesheet" href="../css/Product.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo">VYRA</a>
+
+    <div class="search-wrapper">
+      <input type="text" placeholder="Search products">
+      <button type="button">🔍</button>
+    </div>
+
+    <div class="header-actions">
+      <a href="../account/login.html">👤</a>
+      <a href="../cart/index.html">🛒</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-detail-section">
+      <div class="product-detail-info">
+        <p class="product-tagline">Product details</p>
+
+        <h1 id="productTitle">Loading...</h1>
+
+        <p id="productDescription"></p>
+
+        <div class="price-box">
+          <p id="oldPrice" class="old-price"></p>
+          <p id="productPrice" class="sale-price"></p>
+        </div>
+
+        <p id="productRating"></p>
+
+        <div>
+          <h2>Tags</h2>
+          <ul id="productTags"></ul>
+        </div>
+
+        <div>
+          <h2>Reviews</h2>
+          <div id="productReviews"></div>
+        </div>
+
+        <div class="product-actions">
+          <button id="addToCartButton" class="dark-button" type="button">
+            Add to cart
+          </button>
+
+          <button id="shareButton" class="dark-button" type="button">
+            Share product
+          </button>
+        </div>
+
+        <p id="messageText" class="message-text"></p>
+      </div>
+
+      <div class="product-detail-image">
+        <img id="productImage" src="" alt="">
+      </div>
+    </section>
+
+    <section class="recommended-section">
+      <h2>Products you might like</h2>
+      <div id="recommendedGrid" class="product-grid small-grid"></div>
+    </section>
+  </main>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>

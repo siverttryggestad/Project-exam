@@ -1,0 +1,133 @@
+/* RESET + BASE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/* HEADER */
+
+.site-header {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ece7ef;
+  border-radius: 30px;
+  padding: 8px 15px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.search-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.search-wrapper button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+  font-size: 1.4rem;
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+  background-color: #efe5d8;
+  min-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 60px;
+}
+
+/* LOGIN BOX */
+
+.login-section {
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+}
+
+/* FORM */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+
+.dark-button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+/* LINK */
+
+.signup-link {
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  text-decoration: underline;
+}
+
+/* MESSAGE */
+
+.login-message {
+  margin-top: 10px;
+  color: red;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .login-section {
+    width: 90%;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYRA | Cart</title>
+  <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">VYRA</a>
+
+    <div class="search-wrapper">
+      <input type="text" placeholder="Search products">
+      <button type="button">🔍</button>
+    </div>
+
+    <div class="header-actions">
+      <a href="../account/Login.html">👤</a>
+      <a href="../cart/index.html">🛒</a>
+    </div>
+  </header>
+
+  <main class="cart-page">
+    <section class="cart-item-section">
+      <h1>Your Cart</h1>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <button id="clearCartButton" class="clear-button" type="button">
+        Clear cart
+      </button>
+    </section>
+
+    <aside class="cart-summary">
+      <h2>Cart summary</h2>
+
+      <div class="summary-row">
+        <p>Subtotal:</p>
+        <p id="cartSubtotal">0 kr</p>
+      </div>
+
+      <div class="summary-row">
+        <p>Shipping:</p>
+        <p id="shippingPrice">0 kr</p>
+      </div>
+
+      <div class="summary-row total-row">
+        <p>Total:</p>
+        <p id="cartTotal">0 kr</p>
+      </div>
+
+      <button id="checkoutButton" class="checkout-button" type="button">
+        Proceed to checkout
+      </button>
+
+      <p id="checkoutMessage" class="checkout-message"></p>
+    </aside>
+  </main>
+
+  <script src="../js/cart.js"></script>
+</body>
+</html>
+    

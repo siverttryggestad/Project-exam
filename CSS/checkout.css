@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+
+.site-header {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 40px;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ece7ef;
+  border-radius: 30px;
+  padding: 8px 15px;
+  width: 470px;
+  max-width: 100%;
+}
+
+.search-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.search-wrapper button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.menu-button {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* CHECKOUT PAGE */
+
+.checkout-page {
+  min-height: 620px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 55px 40px;
+}
+
+/* LEFT CARD */
+
+.payment-section {
+  background-color: white;
+  width: 520px;
+  min-height: 520px;
+  padding: 35px;
+  border-radius: 6px;
+}
+
+.payment-section h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.payment-form {
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label,
+.shipping-form label {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.card-number {
+  width: 250px;
+}
+
+.small-input {
+  width: 95px;
+}
+
+.payment-form input {
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+/* FAKE CREDIT CARD */
+
+.credit-card {
+  background-color: #d7ad3f;
+  color: white;
+  width: 340px;
+  height: 215px;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.credit-card h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.chip {
+  font-size: 1.4rem;
+}
+
+.card-digits {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.card-bottom p:last-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* RIGHT CARD */
+
+.shipping-section {
+  background-color: white;
+  width: 340px;
+  min-height: 520px;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.shipping-section h1 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.shipping-text {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-form input,
+.shipping-form select,
+.shipping-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 11px;
+  margin-bottom: 18px;
+}
+
+.shipping-form textarea {
+  min-height: 65px;
+  resize: vertical;
+}
+
+.terms-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-row input {
+  margin-bottom: 0;
+}
+
+.terms-row label {
+  margin-bottom: 0;
+}
+
+.save-button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .search-wrapper {
+    order: 3;
+    width: 100%;
+  }
+
+  .checkout-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-section,
+  .shipping-section {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 25px 20px;
+  }
+
+  .logo {
+    font-size: 2.3rem;
+  }
+
+  .checkout-page {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-number,
+  .small-input {
+    width: 100%;
+  }
+
+  .credit-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card-digits {
+    font-size: 1rem;
+  }
+}

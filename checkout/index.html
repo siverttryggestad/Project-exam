@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYRA | Checkout</title>
+  <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="logo">VYRA</a>
+
+  <div class="search-wrapper">
+    <input type="text" placeholder="Search products">
+    <button type="button">🔍</button>
+  </div>
+
+  <div class="header-actions">
+    <a href="../account/Login.html">👤</a>
+    <a href="../cart/index.html">🛒</a>
+  </div>
+</header>
+
+<main class="checkout-page">
+
+  <section class="payment-section">
+    <h2>Credit card details</h2>
+
+    <form class="payment-form">
+      <div class="form-row">
+        <div class="form-group card-number">
+          <label for="cardNumber">Card number</label>
+          <input type="text" id="cardNumber">
+        </div>
+
+        <div class="form-group small-input">
+          <label for="cardDate">Date</label>
+          <input type="text" id="cardDate">
+        </div>
+      </div>
+
+      <div class="form-group small-input">
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc">
+      </div>
+    </form>
+
+    <div class="credit-card">
+      <h3>Visa Gold</h3>
+      <p class="chip">▣ )))</p>
+      <p class="card-digits">1234 1234 1234 5600</p>
+      <div class="card-bottom">
+        <p>00/00</p>
+        <p>VISA</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shipping-section">
+    <h1>Shipping information</h1>
+    <p class="shipping-text">We ship within 2 working days</p>
+
+    <form class="shipping-form">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Value">
+
+      <label for="location">Location</label>
+      <select id="location">
+        <option>Value</option>
+        <option>Norway</option>
+        <option>Sweden</option>
+        <option>Denmark</option>
+      </select>
+
+      <label for="deliveryNote">Delivery note</label>
+      <textarea id="deliveryNote" placeholder="Value"></textarea>
+
+      <div class="terms-row">
+        <input type="checkbox" id="terms" checked>
+        <label for="terms">I accept the terms</label>
+      </div>
+
+      <a href="confirmation.html" class="save-button">Complete purchase</a>
+    </form>
+  </section>
+
+</main>
+
+</body>
+</html>

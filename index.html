@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYRA | Product Feed</title>
+  <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">VYRA</div>
+
+    <div class="search-wrapper">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products"
+        aria-label="Search products"
+      >
+      <button id="searchButton" type="button" aria-label="Search">
+        🔍
+      </button>
+    </div>
+
+    <div class="header-actions">
+      <a href="../account/login.html">👤</a>
+      <a href="../cart/index.html">🛒</a>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div id="logInSuccessMessage" class="login-success hidden">
+        You have successfully logged in!
+    </div>
+    <section class="carousel-section">
+      <div class="carousel">
+        <button class="carousel-arrow left" id="prevButton" type="button" aria-label="Previous product">
+          ‹
+        </button>
+
+        <div class="carousel-content">
+          <div class="carousel-image-box">
+            <a id="carouselImageLink" href="#">
+              <img id="carouselImage" src="" alt="">
+            </a>
+          </div>
+
+          <div class="carousel-info">
+            <p class="carousel-label">Featured product</p>
+            <h1 id="carouselTitle">Loading...</h1>
+            <p id="carouselDescription">Please wait while products load.</p>
+
+            <div class="carousel-price-box">
+              <p class="old-price" id="carouselOldPrice"></p>
+              <p class="sale-price" id="carouselSalePrice"></p>
+            </div>
+
+            <a id="carouselButton" class="shop-now-button" href="#">Shop now</a>
+          </div>
+        </div>
+
+        <button class="carousel-arrow right" id="nextButton" type="button" aria-label="Next product">
+          ›
+        </button>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="products-heading">
+        <h2>Products</h2>
+        <p id="productCount">0 products</p>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <script src="JS/index.js"></script>
+</body>
+</html>
