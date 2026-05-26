@@ -15,8 +15,6 @@ a {
   color: inherit;
 }
 
-/* HEADER */
-
 .site-header {
   background-color: #e5e5e5;
   display: flex;
@@ -68,8 +66,6 @@ a {
   cursor: pointer;
 }
 
-/* CHECKOUT PAGE */
-
 .checkout-page {
   min-height: 620px;
   background-color: #e5e5e5;
@@ -78,8 +74,6 @@ a {
   gap: 45px;
   padding: 55px 40px;
 }
-
-/* LEFT CARD */
 
 .payment-section {
   background-color: white;
@@ -131,8 +125,6 @@ a {
   padding: 12px;
 }
 
-/* FAKE CREDIT CARD */
-
 .credit-card {
   background-color: #d7ad3f;
   color: white;
@@ -170,8 +162,6 @@ a {
   font-size: 2rem;
   font-weight: bold;
 }
-
-/* RIGHT CARD */
 
 .shipping-section {
   background-color: white;
@@ -233,8 +223,6 @@ a {
   border-radius: 6px;
   cursor: pointer;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .site-header {

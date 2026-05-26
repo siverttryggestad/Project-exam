@@ -12,8 +12,6 @@ body {
   color: #111;
 }
 
-/* HEADER */
-
 .site-header {
   background-color: #e5e5e5;
   display: flex;
@@ -57,8 +55,6 @@ body {
   font-size: 1.4rem;
 }
 
-/* LOGIN PAGE */
-
 .login-page {
   background-color: #efe5d8;
   min-height: 600px;
@@ -70,15 +66,11 @@ body {
   padding-top: 60px;
 }
 
-/* LOGIN BOX */
-
 .login-section {
   background-color: white;
   width: 500px;
   padding: 30px;
 }
-
-/* FORM */
 
 .login-form {
   display: flex;
@@ -96,8 +88,6 @@ body {
   border: 1px solid #ccc;
 }
 
-/* BUTTON */
-
 .dark-button {
   background-color: #222;
   color: white;
@@ -107,8 +97,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* LINK */
-
 .signup-link {
   font-size: 0.9rem;
 }
@@ -117,14 +105,10 @@ body {
   text-decoration: underline;
 }
 
-/* MESSAGE */
-
 .login-message {
   margin-top: 10px;
   color: red;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 600px) {
   .login-section {

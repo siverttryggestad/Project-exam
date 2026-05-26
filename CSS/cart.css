@@ -20,8 +20,6 @@ img {
   display: block;
 }
 
-/* HEADER */
-
 .site-header {
   background-color: #e5e5e5;
   display: flex;
@@ -65,8 +63,6 @@ img {
   font-size: 1.4rem;
 }
 
-/* CART PAGE */
-
 .cart-page {
   background-color: #efe5d8;
   min-height: 600px;
@@ -75,8 +71,6 @@ img {
   grid-template-columns: 1.5fr 1fr;
   gap: 50px;
 }
-
-/* LEFT SIDE */
 
 .cart-item-section {
   padding: 10px 0;
@@ -148,8 +142,6 @@ img {
   cursor: pointer;
 }
 
-/* RIGHT SIDE */
-
 .cart-summary {
   background-color: white;
   padding: 30px;
@@ -190,8 +182,6 @@ img {
   margin-top: 15px;
   color: #b30000;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .site-header {
